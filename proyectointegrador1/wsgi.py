@@ -1,5 +1,5 @@
 """
-WSGI config for pi1 project.
+WSGI config for proyectointegrador1 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pi1.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proyectointegrador1.settings')
 
 application = get_wsgi_application()
