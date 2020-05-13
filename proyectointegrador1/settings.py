@@ -75,10 +75,22 @@ WSGI_APPLICATION = 'proyectointegrador1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# Old way
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pi1-eafit-db',                     
+        'USER': 'amlorav',                     
+        'PASSWORD': 'hk_*2-!.s5z2',
+		'HOST': '51.15.209.191',                     
+        'PORT': '3306',
     }
 }
 
